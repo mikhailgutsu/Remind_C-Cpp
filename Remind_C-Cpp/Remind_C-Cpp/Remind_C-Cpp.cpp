@@ -126,7 +126,7 @@ std::cout << "//////////////////////////////////////////////////////////////////
 
 				int arr3[5] = { 10, 30, 50, 70, 90 };
 					//<-----------------------------------										Insertion Sort Algorithm
-					insertionSort(arr2, 5);
+					insertionSort(arr3, 5);
 					std::cout << "Insertion Sort - ";
 					for (int i = 0; i < 5; i++)
 					{
