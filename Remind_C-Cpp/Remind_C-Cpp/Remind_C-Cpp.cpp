@@ -1,9 +1,7 @@
 ﻿#include <iostream>
 
-//Bib
-
-
-
+//Private include
+#include "bitwise.h"
 
 int main()
 {
