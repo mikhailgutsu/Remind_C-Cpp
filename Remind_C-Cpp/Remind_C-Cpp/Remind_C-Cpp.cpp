@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-//Private include
+//<-----------------	Private include
 #include "bitwise.h"
 
 int main()
