@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 
 //<-----------------									Private include
 #include "bitwise.h"
@@ -65,10 +66,21 @@ int main()
 				log.theLoggerBitWrite(x, 4, 4);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////	END-BITWISE OPERATIONS
-
+				std::cout << "\n";
+				std::cout << "///////////////////////////////////////////////////////////////////////////////////////////////////\n\n";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////	STRINGS
-
 		
+				//<-----------------					INITs
+				std::string str1 = "Hello";
+				std::string str2 = ",World!";
+		
+				//<-----------------					Сцепление двух строк
+				std::string result = str1 + " " + str2; 
+				std::cout << result << std::endl;
+
+				//<-----------------					Длина строки lenght();
+				std::cout << "Length of str1: " << str1.length() << std::endl;
+
 
 
 	return 0;
