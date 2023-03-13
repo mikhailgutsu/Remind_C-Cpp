@@ -35,3 +35,23 @@ void Logger::theLoggerBitCheck(int m_var, int m_pos)
 		std::cout << "\t\t-0-" << std::endl;
 	}
 }
+
+void Logger::theLoggerBitWrite(int m_var, int m_pos, int val)
+{
+	std::cout << "\tBefore - " << m_var;
+	std::cout << "\t\tAfter - ";
+	BIT_WRITE(m_var, m_pos, val);
+	std::cout << printBinaryForm(m_var) << std::endl;
+}
+
+void Logger::theLoggerBitGet(int m_var, int m_pos)
+{
+	if (!BIT_GET(m_var, m_pos))
+	{
+		std::cout << "\t\t-1-" << std::endl;
+	}
+	if (BIT_GET(m_var, m_pos))
+	{
+		std::cout << "\t\t-0-" << std::endl;
+	}
+}
