@@ -4,6 +4,7 @@
 //<-----------------									Private include
 #include "bitwise.h"
 #include "logger.h"
+#include "sort.h"
 //<-----------------									End-Private include
 
 int main()
