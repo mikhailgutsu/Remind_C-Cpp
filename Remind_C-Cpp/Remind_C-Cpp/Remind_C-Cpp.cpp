@@ -7,9 +7,8 @@
 
 int main()
 {
-   
-
-
+	//<-----------------	PreDEF
+	Logger log;
 
 
 	return 0;

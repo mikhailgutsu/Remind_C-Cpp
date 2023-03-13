@@ -20,3 +20,5 @@ void bitCheckOperation(int m_var, int m_pos);
 void bitWriteOperation(int m_var, int m_pos);
 void bitGetOperation(int m_var, int m_pos);
 void bitRangeSetOperation(int m_var, int m_pos);
+
+int printBinaryForm(int a);
