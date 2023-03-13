@@ -70,18 +70,33 @@ int main()
 				std::cout << "///////////////////////////////////////////////////////////////////////////////////////////////////\n\n";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////	STRINGS
 		
-				//<-----------------					INITs
+				//<-----------------																INITs
 				std::string str1 = "Hello";
 				std::string str2 = ",World!";
 		
-				//<-----------------					Сцепление двух строк
+				//<-----------------																Сцепление двух строк
 				std::string result = str1 + " " + str2; 
 				std::cout << result << std::endl;
 
-				//<-----------------					Длина строки lenght();
+				//<-----------------																Длина строки lenght();
 				std::cout << "Length of str1: " << str1.length() << std::endl;
 
+				//<-----------------																Поиск в строке find()
+				if (result.find("World") != std::string::npos) {
+					std::cout << "Found 'World' in result." << std::endl;
+				}
 
+				//<-----------------																Поиск под строки substr()
+				std::string sub = result.substr(6, 5);
+				std::cout << "Substring of result: " << sub << std::endl;
+
+				//<-----------------																Замена под строки replace()
+				result.replace(6, 5, "C++");
+				std::cout << "Result after replacement: " << result << std::endl;
+
+				//<-----------------																Удаление части строки erase()
+				result.erase(0, 6);
+				std::cout << "Result after erasing: " << result << std::endl;
 
 	return 0;
 }
