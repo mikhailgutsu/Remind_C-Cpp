@@ -8,6 +8,8 @@ int printBinaryForm(int a)
 		printf("%d", (a >> i) & 1);
 	}
 
+	std::cout << "\t\tResult - ";
+
 	return a;
 }
 
