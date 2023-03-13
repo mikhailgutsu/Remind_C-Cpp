@@ -23,3 +23,15 @@ void Logger::theLoggerBitFlip(int m_var, int m_pos)
 	BIT_FLIP(m_var, m_pos);
 	std::cout << printBinaryForm(m_var) << std::endl;
 }
+
+void Logger::theLoggerBitCheck(int m_var, int m_pos)
+{
+	if (!BIT_CHECK(m_var, m_pos))
+	{
+		std::cout << "\t\t-1-" << std::endl;
+	}
+	if (BIT_CHECK(m_var, m_pos))
+	{
+		std::cout << "\t\t-0-" << std::endl;
+	}
+}
