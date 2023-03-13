@@ -55,3 +55,11 @@ void Logger::theLoggerBitGet(int m_var, int m_pos)
 		std::cout << "\t\t-0-" << std::endl;
 	}
 }
+
+void Logger::theLoggerBitRangeSet(int m_var, int start, int stop)
+{
+	std::cout << "\tBefore - " << m_var;
+	std::cout << "\t\tAfter - ";
+	BIT_RANGE_SET(m_var, start, stop);
+	std::cout << printBinaryForm(m_var) << std::endl;
+}

@@ -18,5 +18,6 @@ public:
 	void theLoggerBitCheck(int m_var, int m_pos);
 	void theLoggerBitWrite(int m_var, int m_pos, int val);
 	void theLoggerBitGet(int m_var, int m_pos);
+	void theLoggerBitRangeSet(int m_var, int start, int stop);
 
 };
