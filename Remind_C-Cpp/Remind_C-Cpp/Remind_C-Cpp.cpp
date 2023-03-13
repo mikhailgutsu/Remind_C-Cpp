@@ -104,17 +104,37 @@ int main()
 				std::cout << "///////////////////////////////////////////////////////////////////////////////////////////////////\n\n";
 ////////////////////////////////////////////////////////////////////////////////////////////////////////	ALGORITHMS
 
+			//<----------------------------------													Testing Algorithms
+				int arr1[5] = { 10, 30, 50, 70, 90 };
+					//<-----------------------------------										Bubble Sort						
+					bubbleSort(arr1, 5);	
 
+					std::cout << "Bubble Sort - ";
+					for (int i = 0; i < 5; i++)
+					{
+						std::cout << arr1[i] << " ";
+					}std::cout << "\n\n";
 
+				int arr2[5] = { 10, 30, 50, 70, 90 };
+					//<-----------------------------------										Selection Sort Algorithm
+					selectionSort(arr2, 5);
+					std::cout << "Selection Sort - ";
+					for (int i = 0; i < 5; i++)
+					{
+						std::cout << arr2[i] << " ";
+					}std::cout << "\n\n";
 
+				int arr3[5] = { 10, 30, 50, 70, 90 };
+					//<-----------------------------------										Insertion Sort Algorithm
+					insertionSort(arr2, 5);
+					std::cout << "Insertion Sort - ";
+					for (int i = 0; i < 5; i++)
+					{
+						std::cout << arr3[i] << " ";
+					}std::cout << "\n\n";
 
-
-
-
-
-
-
-
+				int arr4[5] = { 10, 30, 50, 70, 90 };
+					//<-----------------------------------										Quick Sort Algorithm
 
 
 
