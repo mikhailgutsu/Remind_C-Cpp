@@ -8,9 +8,10 @@
 #define BIT_WRITE(var, pos, val) ((var) = ((var) & ~(1 << (pos))) | ((val) << (pos)))						//< записывает значение val в бит на позиции pos в переменной var.
 #define BIT_GET(var, pos) (((var) >> (pos)) & 1)															//< получает значение бита на позиции pos в переменной var.
 #define BIT_RANGE_SET(var, start, end) ((var) |= (((1 << ((end) - (start) + 1)) - 1) << (start)))			//< устанавливает биты в диапазоне от start до end в переменной var.
-//<-----------------	EndDefines
+//<-----------------	End-MacroDefines
 
 
 
 //<-----------------	Functions
 int printBinaryForm(int a);
+//<-----------------	END-Functions
