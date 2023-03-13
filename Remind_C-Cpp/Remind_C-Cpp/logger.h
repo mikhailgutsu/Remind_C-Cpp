@@ -12,6 +12,8 @@ protected:
 
 
 public:
-	void theLogger(int m_var, int m_pos);								
+	void theLoggerBitSet(int m_var, int m_pos);
+	void theLoggerBitClear(int m_var, int m_pos);
+	void theLoggerBitFlip(int m_var, int m_pos);
 
 };
